@@ -1,0 +1,2390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PA01AI01" type="xs:string"/>
+  <xs:element name="PA01AR01" type="xs:string"/>
+  <xs:element name="PA01BQ01" type="xs:string"/>
+  <xs:element name="PA01BD01" type="xs:string"/>
+  <xs:element name="PA01BI01" type="xs:string"/>
+  <xs:element name="PA01BI02" type="xs:string"/>
+  <xs:element name="PA01BD02" type="xs:string"/>
+  <xs:element name="PA01DQ01" type="xs:string"/>
+  <xs:element name="PA01DQ02" type="xs:string"/>
+  <xs:element name="PA01DR01" type="xs:string"/>
+  <xs:element name="PA01DR02" type="xs:string"/>
+  <xs:element name="PA01ES01" type="xs:string"/>
+  <xs:element name="PA01A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PA01AI01"/>
+        <xs:element ref="PA01AR01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PA01B">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PA01BQ01"/>
+        <xs:element ref="PA01BD01"/>
+        <xs:element ref="PA01BI01"/>
+        <xs:element ref="PA01BI02"/>
+        <xs:element ref="PA01BD02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PA01D">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PA01DQ01"/>
+        <xs:element ref="PA01DQ02"/>
+        <xs:element ref="PA01DR01"/>
+        <xs:element ref="PA01DR02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PA01E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PA01ES01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PA01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PA01A"/>
+        <xs:element ref="PA01B"/>
+        <xs:element ref="PA01D"/>
+        <xs:element ref="PA01E"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB01AD01" type="xs:string"/>
+  <xs:element name="PB01AR01" type="xs:string"/>
+  <xs:element name="PB01AD02" type="xs:string"/>
+  <xs:element name="PB01AD03" type="xs:string"/>
+  <xs:element name="PB01AD04" type="xs:string"/>
+  <xs:element name="PB01AQ01" type="xs:string"/>
+  <xs:element name="PB01AQ02" type="xs:string"/>
+  <xs:element name="PB01AD05" type="xs:string"/>
+  <xs:element name="PB01AQ03" type="xs:string"/>
+  <xs:element name="PB01BQ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="13811117777"/>
+        <xs:enumeration value="13811112222"/>
+        <xs:enumeration value="13900000000"/>
+        <xs:enumeration value="13300000000"/>
+        <xs:enumeration value="18600000000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB01BR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10-01"/>
+        <xs:enumeration value="2018-09-22"/>
+        <xs:enumeration value="2017-02-01"/>
+        <xs:enumeration value="2017-01-22"/>
+        <xs:enumeration value="2016-11-12"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB01BS01" type="xs:string"/>
+  <xs:element name="PB01BH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB01BQ01"/>
+        <xs:element ref="PB01BR01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB01A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB01AD01"/>
+        <xs:element ref="PB01AR01"/>
+        <xs:element ref="PB01AD02"/>
+        <xs:element ref="PB01AD03"/>
+        <xs:element ref="PB01AD04"/>
+        <xs:element ref="PB01AQ01"/>
+        <xs:element ref="PB01AQ02"/>
+        <xs:element ref="PB01AD05"/>
+        <xs:element ref="PB01AQ03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB01B">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB01BS01"/>
+        <xs:element ref="PB01BH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB01A"/>
+        <xs:element ref="PB01B"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB020D01" type="xs:string"/>
+  <xs:element name="PB020Q01" type="xs:string"/>
+  <xs:element name="PB020D02" type="xs:string"/>
+  <xs:element name="PB020I01" type="xs:string"/>
+  <xs:element name="PB020Q02" type="xs:string"/>
+  <xs:element name="PB020Q03" type="xs:string"/>
+  <xs:element name="PB02">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB020D01"/>
+        <xs:element ref="PB020Q01"/>
+        <xs:element ref="PB020D02"/>
+        <xs:element ref="PB020I01"/>
+        <xs:element ref="PB020Q02"/>
+        <xs:element ref="PB020Q03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB030D01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="4"/>
+        <xs:enumeration value="5"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB030Q01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="北京市朝阳区春晓园北区7号楼C555室"/>
+        <xs:enumeration value="北京市海淀区学院路20号院甲2号楼401室"/>
+        <xs:enumeration value="北京市西城区复兴门北大街4号楼603室"/>
+        <xs:enumeration value="北京市西城区西交民巷64号院1号楼201室"/>
+        <xs:enumeration value="北京市海淀区花园路10号院3号楼701室"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB030Q02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="010-
+                    83234323
+                "/>
+        <xs:enumeration value="010-62123212"/>
+        <xs:enumeration value="010-59873232"/>
+        <xs:enumeration value="010-59000011"/>
+        <xs:enumeration value="010-
+                    57889900
+                "/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB030R01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10-01"/>
+        <xs:enumeration value="2018-09-22"/>
+        <xs:enumeration value="2017-02-01"/>
+        <xs:enumeration value="2017-01-22"/>
+        <xs:enumeration value="2016-11-12"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB03">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB030D01"/>
+        <xs:element ref="PB030Q01"/>
+        <xs:element ref="PB030Q02"/>
+        <xs:element ref="PB030R01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PB040D01" type="xs:string"/>
+  <xs:element name="PB040Q01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="中国人民银行征信中心企业部"/>
+        <xs:enumeration value="北京大学信息科学技术学院软件工程研究所"/>
+        <xs:enumeration value="中科院微电子研究所"/>
+        <xs:enumeration value="北京威力公司"/>
+        <xs:enumeration value="IBM软件中心"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040D02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="10
+                "/>
+        <xs:enumeration value="40
+                "/>
+        <xs:enumeration value="30
+            "/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040D03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="J"/>
+        <xs:enumeration value="M"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040Q02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="北京市西城区金融大街35号国际企业大厦A座305室"/>
+        <xs:enumeration value="北京市海淀区颐和园路5号理科3号楼601室"/>
+        <xs:enumeration value="北京市海淀区清华园1号"/>
+        <xs:enumeration value="北京市朝阳区北土城西路3号"/>
+        <xs:enumeration value="北京市朝阳区北辰东路8号"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040Q03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="010-83233
+                    333
+                "/>
+        <xs:enumeration value="010-62123333
+                "/>
+        <xs:enumeration value="
+                    010-59875555
+                "/>
+        <xs:enumeration value="01
+                    0-59006666
+                "/>
+        <xs:enumeration value="0
+                10-57889900
+            "/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040D04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="3"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040D05">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040D06">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040R01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2008"/>
+        <xs:enumeration value="2007"/>
+        <xs:enumeration value="2004"/>
+        <xs:enumeration value="2003"/>
+        <xs:enumeration value="2001"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB040R02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10-01"/>
+        <xs:enumeration value="2018-09-22"/>
+        <xs:enumeration value="2017-02-01"/>
+        <xs:enumeration value="2017-01-22"/>
+        <xs:enumeration value="2016-11-12"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PB04">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB040D01"/>
+        <xs:element ref="PB040Q01"/>
+        <xs:element ref="PB040D02"/>
+        <xs:element ref="PB040D03"/>
+        <xs:element ref="PB040Q02"/>
+        <xs:element ref="PB040Q03"/>
+        <xs:element ref="PB040D04"/>
+        <xs:element ref="PB040D05"/>
+        <xs:element ref="PB040D06"/>
+        <xs:element ref="PB040R01"/>
+        <xs:element ref="PB040R02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC010Q01" type="xs:string"/>
+  <xs:element name="PC010Q02" type="xs:string"/>
+  <xs:element name="PC010S01" type="xs:string"/>
+  <xs:element name="PC010D01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="01"/>
+        <xs:enumeration value="11"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC010Q01"/>
+        <xs:element ref="PC010Q02"/>
+        <xs:element ref="PC010S01"/>
+        <xs:element ref="PC010D01" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02AD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="11"/>
+        <xs:enumeration value="19"/>
+        <xs:enumeration value="21"/>
+        <xs:enumeration value="22"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02AD02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02AS03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02AR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2010-01"/>
+        <xs:enumeration value="2014-09"/>
+        <xs:enumeration value="2009-05"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02AS01" type="xs:string"/>
+  <xs:element name="PC02AS02" type="xs:string"/>
+  <xs:element name="PC02AH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02AD01"/>
+        <xs:element ref="PC02AD02"/>
+        <xs:element ref="PC02AS03"/>
+        <xs:element ref="PC02AR01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02BD01" type="xs:string"/>
+  <xs:element name="PC02BS03" type="xs:string"/>
+  <xs:element name="PC02BJ02" type="xs:string"/>
+  <xs:element name="PC02BS01" type="xs:string"/>
+  <xs:element name="PC02BJ01" type="xs:string"/>
+  <xs:element name="PC02BS02" type="xs:string"/>
+  <xs:element name="PC02BH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02BD01"/>
+        <xs:element ref="PC02BS03"/>
+        <xs:element ref="PC02BJ02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02CS01" type="xs:string"/>
+  <xs:element name="PC02CJ01" type="xs:string"/>
+  <xs:element name="PC02DD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="3"/>
+        <xs:enumeration value="4"/>
+        <xs:enumeration value="5"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02DS02" type="xs:string"/>
+  <xs:element name="PC02DS03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="8"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02DJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="6100"/>
+        <xs:enumeration value="6000"/>
+        <xs:enumeration value="24550"/>
+        <xs:enumeration value="1000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02DS04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="7"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02DS01" type="xs:string"/>
+  <xs:element name="PC02DH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02DD01"/>
+        <xs:element ref="PC02DS02"/>
+        <xs:element ref="PC02DS03"/>
+        <xs:element ref="PC02DJ01"/>
+        <xs:element ref="PC02DS04"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02ES01" type="xs:string"/>
+  <xs:element name="PC02ES02" type="xs:string"/>
+  <xs:element name="PC02EJ01" type="xs:string"/>
+  <xs:element name="PC02EJ02" type="xs:string"/>
+  <xs:element name="PC02EJ03" type="xs:string"/>
+  <xs:element name="PC02FS01" type="xs:string"/>
+  <xs:element name="PC02FS02" type="xs:string"/>
+  <xs:element name="PC02FJ01" type="xs:string"/>
+  <xs:element name="PC02FJ02" type="xs:string"/>
+  <xs:element name="PC02FJ03" type="xs:string"/>
+  <xs:element name="PC02GS01" type="xs:string"/>
+  <xs:element name="PC02GS02" type="xs:string"/>
+  <xs:element name="PC02GJ01" type="xs:string"/>
+  <xs:element name="PC02GJ02" type="xs:string"/>
+  <xs:element name="PC02GJ03" type="xs:string"/>
+  <xs:element name="PC02HS01" type="xs:string"/>
+  <xs:element name="PC02HS02" type="xs:string"/>
+  <xs:element name="PC02HJ01" type="xs:string"/>
+  <xs:element name="PC02HJ02" type="xs:string"/>
+  <xs:element name="PC02HJ03" type="xs:string"/>
+  <xs:element name="PC02HJ04" type="xs:string"/>
+  <xs:element name="PC02HJ05" type="xs:string"/>
+  <xs:element name="PC02IS01" type="xs:string"/>
+  <xs:element name="PC02IS02" type="xs:string"/>
+  <xs:element name="PC02IJ01" type="xs:string"/>
+  <xs:element name="PC02IJ02" type="xs:string"/>
+  <xs:element name="PC02IJ03" type="xs:string"/>
+  <xs:element name="PC02IJ04" type="xs:string"/>
+  <xs:element name="PC02IJ05" type="xs:string"/>
+  <xs:element name="PC02KD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02KD02" type="xs:string"/>
+  <xs:element name="PC02KS02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02KJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="220000"/>
+        <xs:enumeration value="1375838"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02KJ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="110000"/>
+        <xs:enumeration value="687919"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC02KS01" type="xs:string"/>
+  <xs:element name="PC02KH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02KD01"/>
+        <xs:element ref="PC02KD02"/>
+        <xs:element ref="PC02KS02"/>
+        <xs:element ref="PC02KJ01"/>
+        <xs:element ref="PC02KJ02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02AS01"/>
+        <xs:element ref="PC02AS02"/>
+        <xs:element ref="PC02AH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02B">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02BS01"/>
+        <xs:element ref="PC02BJ01"/>
+        <xs:element ref="PC02BS02"/>
+        <xs:element ref="PC02BH"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02C">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02CS01"/>
+        <xs:element ref="PC02CJ01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02D">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02DS01"/>
+        <xs:element ref="PC02DH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02ES01"/>
+        <xs:element ref="PC02ES02"/>
+        <xs:element ref="PC02EJ01"/>
+        <xs:element ref="PC02EJ02"/>
+        <xs:element ref="PC02EJ03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02F">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02FS01"/>
+        <xs:element ref="PC02FS02"/>
+        <xs:element ref="PC02FJ01"/>
+        <xs:element ref="PC02FJ02"/>
+        <xs:element ref="PC02FJ03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02G">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02GS01"/>
+        <xs:element ref="PC02GS02"/>
+        <xs:element ref="PC02GJ01"/>
+        <xs:element ref="PC02GJ02"/>
+        <xs:element ref="PC02GJ03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02H">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02HS01"/>
+        <xs:element ref="PC02HS02"/>
+        <xs:element ref="PC02HJ01"/>
+        <xs:element ref="PC02HJ02"/>
+        <xs:element ref="PC02HJ03"/>
+        <xs:element ref="PC02HJ04"/>
+        <xs:element ref="PC02HJ05"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02I">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02IS01"/>
+        <xs:element ref="PC02IS02"/>
+        <xs:element ref="PC02IJ01"/>
+        <xs:element ref="PC02IJ02"/>
+        <xs:element ref="PC02IJ03"/>
+        <xs:element ref="PC02IJ04"/>
+        <xs:element ref="PC02IJ05"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02K">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02KS01"/>
+        <xs:element ref="PC02KH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC02">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02A"/>
+        <xs:element ref="PC02B"/>
+        <xs:element ref="PC02C"/>
+        <xs:element ref="PC02D"/>
+        <xs:element ref="PC02E"/>
+        <xs:element ref="PC02F"/>
+        <xs:element ref="PC02G"/>
+        <xs:element ref="PC02H"/>
+        <xs:element ref="PC02I"/>
+        <xs:element ref="PC02K"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC030D01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC030S02" type="xs:string"/>
+  <xs:element name="PC030J01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1000"/>
+        <xs:enumeration value="200"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC030S01" type="xs:string"/>
+  <xs:element name="PC030H">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC030D01"/>
+        <xs:element ref="PC030S02"/>
+        <xs:element ref="PC030J01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC03">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC030S01"/>
+        <xs:element ref="PC030H" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC040D01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="3"/>
+        <xs:enumeration value="4"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC040S02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC040J01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="500"/>
+        <xs:enumeration value="420000"/>
+        <xs:enumeration value="400"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PC040S01" type="xs:string"/>
+  <xs:element name="PC040H">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC040D01"/>
+        <xs:element ref="PC040S02"/>
+        <xs:element ref="PC040J01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC04">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC040S01"/>
+        <xs:element ref="PC040H" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC05AR01" type="xs:string"/>
+  <xs:element name="PC05AD01" type="xs:string"/>
+  <xs:element name="PC05AI01" type="xs:string"/>
+  <xs:element name="PC05AQ01" type="xs:string"/>
+  <xs:element name="PC05BS01" type="xs:string"/>
+  <xs:element name="PC05BS02" type="xs:string"/>
+  <xs:element name="PC05BS03" type="xs:string"/>
+  <xs:element name="PC05BS04" type="xs:string"/>
+  <xs:element name="PC05BS05" type="xs:string"/>
+  <xs:element name="PC05BS06" type="xs:string"/>
+  <xs:element name="PC05BS07" type="xs:string"/>
+  <xs:element name="PC05BS08" type="xs:string"/>
+  <xs:element name="PC05A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC05AR01"/>
+        <xs:element ref="PC05AD01"/>
+        <xs:element ref="PC05AI01"/>
+        <xs:element ref="PC05AQ01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC05B">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC05BS01"/>
+        <xs:element ref="PC05BS02"/>
+        <xs:element ref="PC05BS03"/>
+        <xs:element ref="PC05BS04"/>
+        <xs:element ref="PC05BS05"/>
+        <xs:element ref="PC05BS06"/>
+        <xs:element ref="PC05BS07"/>
+        <xs:element ref="PC05BS08"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PC05">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC05A"/>
+        <xs:element ref="PC05B"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD02AI01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="77121"/>
+        <xs:enumeration value="56443"/>
+        <xs:enumeration value="99989"/>
+        <xs:enumeration value="24821"/>
+        <xs:enumeration value="81889"/>
+        <xs:enumeration value="68662"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AD01" type="xs:string"/>
+  <xs:element name="PD02AI02" type="xs:string"/>
+  <xs:element name="PD02AI03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="P196"/>
+        <xs:enumeration value="N344"/>
+        <xs:enumeration value="K979"/>
+        <xs:enumeration value="E897"/>
+        <xs:enumeration value="S929"/>
+        <xs:enumeration value="P859"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AD02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="31"/>
+        <xs:enumeration value="10"/>
+        <xs:enumeration value="20"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="16000"/>
+        <xs:enumeration value="30000"/>
+        <xs:enumeration value="1200000"/>
+        <xs:enumeration value="160000"/>
+        <xs:enumeration value="70000"/>
+        <xs:enumeration value="500000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AD03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="CNY"/>
+        <xs:enumeration value="USD"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2009-04-01"/>
+        <xs:enumeration value="2017-04-01"/>
+        <xs:enumeration value="2012-10-01"/>
+        <xs:enumeration value="2009-05-01"/>
+        <xs:enumeration value="2014-09-01"/>
+        <xs:enumeration value="2010-09-01"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2099-12-31"/>
+        <xs:enumeration value="2020-01-31"/>
+        <xs:enumeration value="2019-01-31"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AD04" type="xs:string"/>
+  <xs:element name="PD02AJ04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1000"/>
+        <xs:enumeration value="0"/>
+        <xs:enumeration value="40000"/>
+        <xs:enumeration value="135500"/>
+        <xs:enumeration value="30000"/>
+        <xs:enumeration value="500000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AJ03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="100000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02AI04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="T763"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD02A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD02AI01"/>
+        <xs:element ref="PD02AD01"/>
+        <xs:element ref="PD02AI02"/>
+        <xs:element ref="PD02AI03"/>
+        <xs:element ref="PD02AD02"/>
+        <xs:element ref="PD02AJ01"/>
+        <xs:element ref="PD02AD03"/>
+        <xs:element ref="PD02AR01"/>
+        <xs:element ref="PD02AR02"/>
+        <xs:element ref="PD02AD04"/>
+        <xs:element ref="PD02AJ04"/>
+        <xs:element ref="PD02AJ03"/>
+        <xs:element ref="PD02AI04"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD02">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD02A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01AI01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="24432"/>
+        <xs:enumeration value="62807"/>
+        <xs:enumeration value="65595"/>
+        <xs:enumeration value="74299"/>
+        <xs:enumeration value="32455"/>
+        <xs:enumeration value="49524"/>
+        <xs:enumeration value="79911"/>
+        <xs:enumeration value="93856"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="C1"/>
+        <xs:enumeration value="D1"/>
+        <xs:enumeration value="R1"/>
+        <xs:enumeration value="R2"/>
+        <xs:enumeration value="R3"/>
+        <xs:enumeration value="R4"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="53"/>
+        <xs:enumeration value="11"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AI02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="SK"/>
+        <xs:enumeration value="MZ"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="B1"/>
+        <xs:enumeration value="11"/>
+        <xs:enumeration value="91"/>
+        <xs:enumeration value="81"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2007-11-08"/>
+        <xs:enumeration value="2010-01-22"/>
+        <xs:enumeration value="2010-09-22"/>
+        <xs:enumeration value="2016-07-22"/>
+        <xs:enumeration value="2009-05-22"/>
+        <xs:enumeration value="2017-05-28"/>
+        <xs:enumeration value="2014-09-22"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="10000"/>
+        <xs:enumeration value="360000"/>
+        <xs:enumeration value="500000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD10" type="xs:string"/>
+  <xs:element name="PD01BD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="4"/>
+        <xs:enumeration value=""/>
+        <xs:enumeration value="6"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-01-20"/>
+        <xs:enumeration value=""/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="17100"/>
+        <xs:enumeration value="394000"/>
+        <xs:enumeration value="30000"/>
+        <xs:enumeration value="230950"/>
+        <xs:enumeration value="0"/>
+        <xs:enumeration value="1000"/>
+        <xs:enumeration value="40000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="2018-10-25"/>
+        <xs:enumeration value="2018-10-31"/>
+        <xs:enumeration value="2018-10-05"/>
+        <xs:enumeration value="2018-09-25"/>
+        <xs:enumeration value="2018-10-19"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BR03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-01-20"/>
+        <xs:enumeration value="2018-10-25"/>
+        <xs:enumeration value="2018-10-31"/>
+        <xs:enumeration value="2018-10-05"/>
+        <xs:enumeration value="2018-09-25"/>
+        <xs:enumeration value="2017-05-28"/>
+        <xs:enumeration value="2018-10-19"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01FD01" type="xs:string"/>
+  <xs:element name="PD01FR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-01-20"/>
+        <xs:enumeration value="2017-07-05"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01FS02" type="xs:string"/>
+  <xs:element name="PD01FJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="10000"/>
+        <xs:enumeration value="20000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01FQ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="该贷款由XX公司代偿10,000元"/>
+        <xs:enumeration value="该贷款由阿里公司代偿20000元"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01FS01" type="xs:string"/>
+  <xs:element name="PD01FH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01FD01"/>
+        <xs:element ref="PD01FR01"/>
+        <xs:element ref="PD01FS02"/>
+        <xs:element ref="PD01FJ01"/>
+        <xs:element ref="PD01FQ01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01AI01"/>
+        <xs:element ref="PD01AD01"/>
+        <xs:element ref="PD01AD02"/>
+        <xs:element ref="PD01AI02"/>
+        <xs:element ref="PD01AI03" minOccurs="0"/>
+        <xs:element ref="PD01AI04" minOccurs="0"/>
+        <xs:element ref="PD01AD03" minOccurs="0"/>
+        <xs:element ref="PD01AR01"/>
+        <xs:element ref="PD01AD04" minOccurs="0"/>
+        <xs:element ref="PD01AJ01" minOccurs="0"/>
+        <xs:element ref="PD01AD10" minOccurs="0"/>
+        <xs:element ref="PD01AJ02" minOccurs="0"/>
+        <xs:element ref="PD01AR02" minOccurs="0"/>
+        <xs:element ref="PD01AD05" minOccurs="0"/>
+        <xs:element ref="PD01AD06" minOccurs="0"/>
+        <xs:element ref="PD01AS01" minOccurs="0"/>
+        <xs:element ref="PD01AJ03" minOccurs="0"/>
+        <xs:element ref="PD01AD07" minOccurs="0"/>
+        <xs:element ref="PD01AD08" minOccurs="0"/>
+        <xs:element ref="PD01AD09" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01B">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01BD01"/>
+        <xs:element ref="PD01BR01"/>
+        <xs:element ref="PD01BR04" minOccurs="0"/>
+        <xs:element ref="PD01BJ01"/>
+        <xs:element ref="PD01BR02"/>
+        <xs:element ref="PD01BJ02" minOccurs="0"/>
+        <xs:element ref="PD01BD03" minOccurs="0"/>
+        <xs:element ref="PD01BD04" minOccurs="0"/>
+        <xs:element ref="PD01BR03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01F">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01FS01"/>
+        <xs:element ref="PD01FH"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01AI03" type="xs:string"/>
+  <xs:element name="PD01AI04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="68662"/>
+        <xs:enumeration value="81889"/>
+        <xs:enumeration value="24821"/>
+        <xs:enumeration value="56443"/>
+        <xs:enumeration value="77121"/>
+        <xs:enumeration value="99989"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="CNY"/>
+        <xs:enumeration value="USD"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2020-01-19"/>
+        <xs:enumeration value="2025-09-21"/>
+        <xs:enumeration value="2019-01-31"/>
+        <xs:enumeration value="2019-09-21"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD05">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="12"/>
+        <xs:enumeration value="31"/>
+        <xs:enumeration value="11"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD06" type="xs:string"/>
+  <xs:element name="PD01AS01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="180"/>
+        <xs:enumeration value="60"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD07">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="4"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD08">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="5"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AD09">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BR04" type="xs:string"/>
+  <xs:element name="PD01BJ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="6100"/>
+        <xs:enumeration value="24550"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BD03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01BD04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="N"/>
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01DR03" type="xs:string"/>
+  <xs:element name="PD01DD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="B"/>
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="N"/>
+        <xs:enumeration value="7"/>
+        <xs:enumeration value="6"/>
+        <xs:enumeration value="5"/>
+        <xs:enumeration value="4"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01DR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2016-11"/>
+        <xs:enumeration value="2016-10"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01DR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10"/>
+        <xs:enumeration value="2018-09"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01DH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01DR03"/>
+        <xs:element ref="PD01DD01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01ER03" type="xs:string"/>
+  <xs:element name="PD01ED01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="B"/>
+        <xs:enumeration value="7"/>
+        <xs:enumeration value="6"/>
+        <xs:enumeration value="5"/>
+        <xs:enumeration value="4"/>
+        <xs:enumeration value="3"/>
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="N"/>
+        <xs:enumeration value="#"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01EJ01" type="xs:string"/>
+  <xs:element name="PD01ER01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2014-09"/>
+        <xs:enumeration value="2016-07"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ER02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10"/>
+        <xs:enumeration value="2018-09"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ES01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="50"/>
+        <xs:enumeration value="28"/>
+        <xs:enumeration value="49"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01EH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01ER03"/>
+        <xs:element ref="PD01ED01"/>
+        <xs:element ref="PD01EJ01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01D">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01DR01"/>
+        <xs:element ref="PD01DR02"/>
+        <xs:element ref="PD01DH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01ER01"/>
+        <xs:element ref="PD01ER02"/>
+        <xs:element ref="PD01ES01"/>
+        <xs:element ref="PD01EH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01CR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10"/>
+        <xs:enumeration value="2018-09"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="400000"/>
+        <xs:enumeration value="30000"/>
+        <xs:enumeration value="255500"/>
+        <xs:enumeration value="1000"/>
+        <xs:enumeration value="40000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CD02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="3"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CS01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="125"/>
+        <xs:enumeration value="20"/>
+        <xs:enumeration value="11"/>
+        <xs:enumeration value="16"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10-05"/>
+        <xs:enumeration value="2018-09-12"/>
+        <xs:enumeration value="2018-10-19"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CJ04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="5000"/>
+        <xs:enumeration value="24500"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CJ05">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="0"/>
+        <xs:enumeration value="5000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CR03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10-05"/>
+        <xs:enumeration value="2018-09-10"/>
+        <xs:enumeration value="2018-10-19"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CS02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CJ06">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="6100"/>
+        <xs:enumeration value="24550"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CJ07">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1000"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01CJ08" type="xs:string"/>
+  <xs:element name="PD01CJ09" type="xs:string"/>
+  <xs:element name="PD01CJ10" type="xs:string"/>
+  <xs:element name="PD01CR04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2018-10-05"/>
+        <xs:enumeration value="2018-09-12"/>
+        <xs:enumeration value="2018-10-19"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ZD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ZQ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="该账户正处在异议处理期。"/>
+        <xs:enumeration value="异议信息确实有误，但因技术原因暂时无法更正。"/>
+        <xs:enumeration value="tst"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ZR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="20
+                        19-03-08
+                    "/>
+        <xs:enumeration value="2019-03-08
+                    "/>
+        <xs:enumeration value="2019-07-14"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ZS01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2"/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01ZH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01ZD01"/>
+        <xs:element ref="PD01ZQ01"/>
+        <xs:element ref="PD01ZR01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01C">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01CR01"/>
+        <xs:element ref="PD01CD01"/>
+        <xs:element ref="PD01CJ01"/>
+        <xs:element ref="PD01CD02" minOccurs="0"/>
+        <xs:element ref="PD01CJ02" minOccurs="0"/>
+        <xs:element ref="PD01CJ03" minOccurs="0"/>
+        <xs:element ref="PD01CS01" minOccurs="0"/>
+        <xs:element ref="PD01CR02"/>
+        <xs:element ref="PD01CJ04" minOccurs="0"/>
+        <xs:element ref="PD01CJ05"/>
+        <xs:element ref="PD01CR03"/>
+        <xs:element ref="PD01CS02" minOccurs="0"/>
+        <xs:element ref="PD01CJ06" minOccurs="0"/>
+        <xs:element ref="PD01CJ07" minOccurs="0"/>
+        <xs:element ref="PD01CJ08" minOccurs="0"/>
+        <xs:element ref="PD01CJ09" minOccurs="0"/>
+        <xs:element ref="PD01CJ10" minOccurs="0"/>
+        <xs:element ref="PD01CJ12" minOccurs="0"/>
+        <xs:element ref="PD01CJ14" minOccurs="0"/>
+        <xs:element ref="PD01CJ11" minOccurs="0"/>
+        <xs:element ref="PD01CJ13" minOccurs="0"/>
+        <xs:element ref="PD01CJ15" minOccurs="0"/>
+        <xs:element ref="PD01CR04"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01Z">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01ZS01"/>
+        <xs:element ref="PD01ZH" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01AJ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="70000"/>
+        <xs:enumeration value="160000"/>
+        <xs:enumeration value="30000"/>
+        <xs:enumeration value="16000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD01AJ03" type="xs:string"/>
+  <xs:element name="PD01CJ02" type="xs:string"/>
+  <xs:element name="PD01CJ03" type="xs:string"/>
+  <xs:element name="PD01CJ12" type="xs:string"/>
+  <xs:element name="PD01CJ14" type="xs:string"/>
+  <xs:element name="PD01GR01" type="xs:string"/>
+  <xs:element name="PD01GD01" type="xs:string"/>
+  <xs:element name="PD01GS01" type="xs:string"/>
+  <xs:element name="PD01GH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01GR01"/>
+        <xs:element ref="PD01GD01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01HJ01" type="xs:string"/>
+  <xs:element name="PD01HR01" type="xs:string"/>
+  <xs:element name="PD01HR02" type="xs:string"/>
+  <xs:element name="PD01HJ02" type="xs:string"/>
+  <xs:element name="PD01HS01" type="xs:string"/>
+  <xs:element name="PD01HH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01HJ01"/>
+        <xs:element ref="PD01HR01"/>
+        <xs:element ref="PD01HR02"/>
+        <xs:element ref="PD01HJ02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01G">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01GS01"/>
+        <xs:element ref="PD01GH"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01H">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01HS01"/>
+        <xs:element ref="PD01HH"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD01CJ11" type="xs:string"/>
+  <xs:element name="PD01CJ13" type="xs:string"/>
+  <xs:element name="PD01CJ15" type="xs:string"/>
+  <xs:element name="PD01">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="PD01A"/>
+        <xs:element ref="PD01B"/>
+        <xs:element ref="PD01F"/>
+        <xs:element ref="PD01D"/>
+        <xs:element ref="PD01E"/>
+        <xs:element ref="PD01C"/>
+        <xs:element ref="PD01Z"/>
+        <xs:element ref="PD01G"/>
+        <xs:element ref="PD01H"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD03AD08">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AD01" type="xs:string"/>
+  <xs:element name="PD03AQ01" type="xs:string"/>
+  <xs:element name="PD03AD02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="81"/>
+        <xs:enumeration value="11"/>
+        <xs:enumeration value="91"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2011-05-15"/>
+        <xs:enumeration value="2014-05-15"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2099-12-31"/>
+        <xs:enumeration value="2019-05-14"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AD03" type="xs:string"/>
+  <xs:element name="PD03AQ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="I312"/>
+        <xs:enumeration value="O026"/>
+        <xs:enumeration value="A580"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="20000"/>
+        <xs:enumeration value="200000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AD04">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="CNY"/>
+        <xs:enumeration value="USD"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AJ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="10000"/>
+        <xs:enumeration value="100000"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AD05">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AD06">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="R2"/>
+        <xs:enumeration value=""/>
+        <xs:enumeration value="D1"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AD07">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="N"/>
+        <xs:enumeration value=""/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AS01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PD03AR03" type="xs:string"/>
+  <xs:element name="PD03A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD03AD08"/>
+        <xs:element ref="PD03AD01"/>
+        <xs:element ref="PD03AQ01"/>
+        <xs:element ref="PD03AD02"/>
+        <xs:element ref="PD03AR01"/>
+        <xs:element ref="PD03AR02"/>
+        <xs:element ref="PD03AD03"/>
+        <xs:element ref="PD03AQ02"/>
+        <xs:element ref="PD03AJ01"/>
+        <xs:element ref="PD03AD04"/>
+        <xs:element ref="PD03AJ02"/>
+        <xs:element ref="PD03AD05"/>
+        <xs:element ref="PD03AD06"/>
+        <xs:element ref="PD03AD07"/>
+        <xs:element ref="PD03AS01"/>
+        <xs:element ref="PD03AR03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PD03">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD03A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PE01AD01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="TE"/>
+        <xs:enumeration value="UE"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01AQ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="中国电信集团江苏省电信公司"/>
+        <xs:enumeration value="人力资源和社会保障部"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01AD02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1
+                "/>
+        <xs:enumeration value="2
+                "/>
+        <xs:enumeration value="
+                    02
+                "/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01AR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2009-08-17"/>
+        <xs:enumeration value="2012-08-17"/>
+        <xs:enumeration value=""/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01AD03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01AJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1000"/>
+        <xs:enumeration value="0"/>
+        <xs:enumeration value="200"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01AR02" type="xs:string"/>
+  <xs:element name="PE01AQ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="NNNNNNNNNNNNNNNNNNNNNN12"/>
+        <xs:enumeration value="NNNNNN1NNNNNNNNNNNNNNNNN"/>
+        <xs:enumeration value=""/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PE01A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PE01AD01"/>
+        <xs:element ref="PE01AQ01"/>
+        <xs:element ref="PE01AD02"/>
+        <xs:element ref="PE01AR01"/>
+        <xs:element ref="PE01AD03"/>
+        <xs:element ref="PE01AJ01"/>
+        <xs:element ref="PE01AR02"/>
+        <xs:element ref="PE01AQ02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PE01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PE01A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF01AQ01" type="xs:string"/>
+  <xs:element name="PF01AJ01" type="xs:string"/>
+  <xs:element name="PF01AR01" type="xs:string"/>
+  <xs:element name="PF01A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF01AQ01"/>
+        <xs:element ref="PF01AJ01"/>
+        <xs:element ref="PF01AR01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF01A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF03AQ01" type="xs:string"/>
+  <xs:element name="PF03AQ02" type="xs:string"/>
+  <xs:element name="PF03AR01" type="xs:string"/>
+  <xs:element name="PF03AD01" type="xs:string"/>
+  <xs:element name="PF03AQ03" type="xs:string"/>
+  <xs:element name="PF03AR02" type="xs:string"/>
+  <xs:element name="PF03AQ04" type="xs:string"/>
+  <xs:element name="PF03AJ01" type="xs:string"/>
+  <xs:element name="PF03AQ05" type="xs:string"/>
+  <xs:element name="PF03AJ02" type="xs:string"/>
+  <xs:element name="PF03A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF03AQ01"/>
+        <xs:element ref="PF03AQ02"/>
+        <xs:element ref="PF03AR01"/>
+        <xs:element ref="PF03AD01"/>
+        <xs:element ref="PF03AQ03"/>
+        <xs:element ref="PF03AR02"/>
+        <xs:element ref="PF03AQ04"/>
+        <xs:element ref="PF03AJ01"/>
+        <xs:element ref="PF03AQ05"/>
+        <xs:element ref="PF03AJ02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF03">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF03A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF04AQ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="北京市西城区地方税务局"/>
+        <xs:enumeration value="北京市建设管理服务中心"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PF04AQ02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="责
+                    令限期改正、没收违法所得
+                "/>
+        <xs:enumeration value="暂
+                    扣或者吊销许可证、暂扣或者吊销执照
+                "/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PF04AJ01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="40
+                    0
+                "/>
+        <xs:enumeration value="
+                "/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PF04AR01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="2016-08"/>
+        <xs:enumeration value="2015-07"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PF04AR02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value=""/>
+        <xs:enumeration value="2016-07"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PF04AQ03" type="xs:string"/>
+  <xs:element name="PF04A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF04AQ01"/>
+        <xs:element ref="PF04AQ02"/>
+        <xs:element ref="PF04AJ01"/>
+        <xs:element ref="PF04AR01"/>
+        <xs:element ref="PF04AR02"/>
+        <xs:element ref="PF04AQ03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF04">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF04A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF05AQ01" type="xs:string"/>
+  <xs:element name="PF05AR01" type="xs:string"/>
+  <xs:element name="PF05AD01" type="xs:string"/>
+  <xs:element name="PF05AR02" type="xs:string"/>
+  <xs:element name="PF05AR03" type="xs:string"/>
+  <xs:element name="PF05AQ02" type="xs:string"/>
+  <xs:element name="PF05AQ03" type="xs:string"/>
+  <xs:element name="PF05AJ01" type="xs:string"/>
+  <xs:element name="PF05AQ04" type="xs:string"/>
+  <xs:element name="PF05AR04" type="xs:string"/>
+  <xs:element name="PF05A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF05AQ01"/>
+        <xs:element ref="PF05AR01"/>
+        <xs:element ref="PF05AD01"/>
+        <xs:element ref="PF05AR02"/>
+        <xs:element ref="PF05AR03"/>
+        <xs:element ref="PF05AQ02"/>
+        <xs:element ref="PF05AQ03"/>
+        <xs:element ref="PF05AJ01"/>
+        <xs:element ref="PF05AQ04"/>
+        <xs:element ref="PF05AR04"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF05">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF05A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF06AD01" type="xs:string"/>
+  <xs:element name="PF06AQ01" type="xs:string"/>
+  <xs:element name="PF06AQ02" type="xs:string"/>
+  <xs:element name="PF06AQ03" type="xs:string"/>
+  <xs:element name="PF06AR01" type="xs:string"/>
+  <xs:element name="PF06AR02" type="xs:string"/>
+  <xs:element name="PF06AR03" type="xs:string"/>
+  <xs:element name="PF06A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF06AD01"/>
+        <xs:element ref="PF06AQ01"/>
+        <xs:element ref="PF06AQ02"/>
+        <xs:element ref="PF06AQ03"/>
+        <xs:element ref="PF06AR01"/>
+        <xs:element ref="PF06AR02"/>
+        <xs:element ref="PF06AR03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF06">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF06A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF07AQ01" type="xs:string"/>
+  <xs:element name="PF07AQ02" type="xs:string"/>
+  <xs:element name="PF07AD01" type="xs:string"/>
+  <xs:element name="PF07AD02" type="xs:string"/>
+  <xs:element name="PF07AR01" type="xs:string"/>
+  <xs:element name="PF07AR02" type="xs:string"/>
+  <xs:element name="PF07AR03" type="xs:string"/>
+  <xs:element name="PF07A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF07AQ01"/>
+        <xs:element ref="PF07AQ02"/>
+        <xs:element ref="PF07AD01"/>
+        <xs:element ref="PF07AD02"/>
+        <xs:element ref="PF07AR01"/>
+        <xs:element ref="PF07AR02"/>
+        <xs:element ref="PF07AR03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF07">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF07A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF08AQ01" type="xs:string"/>
+  <xs:element name="PF08AQ02" type="xs:string"/>
+  <xs:element name="PF08AR01" type="xs:string"/>
+  <xs:element name="PF08AR02" type="xs:string"/>
+  <xs:element name="PF08A">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF08AQ01"/>
+        <xs:element ref="PF08AQ02"/>
+        <xs:element ref="PF08AR01"/>
+        <xs:element ref="PF08AR02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PF08">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF08A"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PG010D03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="4"/>
+        <xs:enumeration value="5"/>
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="3"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PG010Q01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="防盗锁三大"/>
+        <xs:enumeration value="征信中心说明测试样例"/>
+        <xs:enumeration value="信用报告存在信息缺失。"/>
+        <xs:enumeration value="dsfdsdsfffdddddddd"/>
+        <xs:enumeration value="信贷交易信息提示正处在异议处理期。"/>
+        <xs:enumeration value="学位正处在异议处理期。"/>
+        <xs:enumeration value="婚姻状况正处在异议处理期。"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PG010R01" type="xs:string"/>
+  <xs:element name="PG010D01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PG010D02">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="1"/>
+        <xs:enumeration value="201"/>
+        <xs:enumeration value="202"/>
+        <xs:enumeration value="203"/>
+        <xs:enumeration value="204"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PG010S01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="16"/>
+        <xs:enumeration value="6"/>
+        <xs:enumeration value="0"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PG010H">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="PG010D03" minOccurs="0"/>
+        <xs:element ref="PG010Q01" minOccurs="0"/>
+        <xs:element ref="PG010R01" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PG01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PG010D01"/>
+        <xs:element ref="PG010D02"/>
+        <xs:element ref="PG010S01"/>
+        <xs:element ref="PG010H" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PH010R01" type="xs:string"/>
+  <xs:element name="PH010D01">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="11"/>
+        <xs:enumeration value="24"/>
+        <xs:enumeration value="15"/>
+        <xs:enumeration value="31"/>
+        <xs:enumeration value="22"/>
+        <xs:enumeration value="23"/>
+        <xs:enumeration value="41"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PH010Q02" type="xs:string"/>
+  <xs:element name="PH010Q03">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="02"/>
+        <xs:enumeration value="08"/>
+        <xs:enumeration value="03"/>
+        <xs:enumeration value="24"/>
+        <xs:enumeration value="20"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+  <xs:element name="PH01">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PH010R01"/>
+        <xs:element ref="PH010D01"/>
+        <xs:element ref="PH010Q02"/>
+        <xs:element ref="PH010Q03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PRH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PA01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PIM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PMM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PRM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB03" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="POM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PB04" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PSM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PCO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC02"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PNO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PPO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC04"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PQO">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PC05"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PCA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD02" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PDA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD01" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PCR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PD03" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PND">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PE01" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="POT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF01"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PCJ" type="xs:string"/>
+  <xs:element name="PCE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF03"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PAP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF04" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PHF">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF05"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PBS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF06"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PPQ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF07"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PAH">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PF08"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="POS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PG01" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="POQ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PH01" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="PRH" minOccurs="0"/>
+        <xs:element ref="PIM" minOccurs="0"/>
+        <xs:element ref="PMM" minOccurs="0"/>
+        <xs:element ref="PRM" minOccurs="0"/>
+        <xs:element ref="POM" minOccurs="0"/>
+        <xs:element ref="PSM" minOccurs="0"/>
+        <xs:element ref="PCO" minOccurs="0"/>
+        <xs:element ref="PNO" minOccurs="0"/>
+        <xs:element ref="PPO" minOccurs="0"/>
+        <xs:element ref="PQO" minOccurs="0"/>
+        <xs:element ref="PCA" minOccurs="0"/>
+        <xs:element ref="PDA" minOccurs="0"/>
+        <xs:element ref="PCR" minOccurs="0"/>
+        <xs:element ref="PND" minOccurs="0"/>
+        <xs:element ref="POT" minOccurs="0"/>
+        <xs:element ref="PCJ" minOccurs="0"/>
+        <xs:element ref="PCE" minOccurs="0"/>
+        <xs:element ref="PAP" minOccurs="0"/>
+        <xs:element ref="PHF" minOccurs="0"/>
+        <xs:element ref="PBS" minOccurs="0"/>
+        <xs:element ref="PPQ" minOccurs="0"/>
+        <xs:element ref="PAH" minOccurs="0"/>
+        <xs:element ref="POS" minOccurs="0"/>
+        <xs:element ref="POQ" minOccurs="0"/>
+        <xs:element ref="Msg" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ResultCode" type="xs:string"/>
+  <xs:element name="ResultDesc" type="xs:string"/>
+  <xs:element name="ReportName" type="xs:string"/>
+  <xs:element name="ReportMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Document"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Msg">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ResultCode"/>
+        <xs:element ref="ResultDesc"/>
+        <xs:element ref="ReportName"/>
+        <xs:element ref="ReportMessage"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

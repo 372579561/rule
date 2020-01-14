@@ -1,11 +1,6 @@
-package cpp.util;
+package com.test.rule.utils;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -14,48 +9,60 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+@Slf4j
 public class HttpclientUtil {
-    /** 字符串编码格式 */
+    private String baseUrl = "http://192.168.2.52:8080/cpp";
+    private String loginUrl = "/login/interfaceLogin.html";
+    /**
+     * 字符串编码格式
+     */
     public final static String CHARSET_NAME = "UTF-8";
+    @Autowired
+    private RestTemplate restTemplate;
 
-    public static void main(String[] args) throws Exception {
-        String loginUrl = "http://localhost:8085/cpp/login/interfaceLogin.html";
-//		String queryUrl = "http://localhost:8085/cpp/icqQueryApply/openQuery.do";
-        String queryUrl = "http://localhost:8085/cpp/ecqQueryApply/openQuery.do";
-        String loginoutUrl = "http://localhost:8085/cpp/login/interfaceLoginout.html";
-//		String paramJson = "{\"app_des\":\"interfaceTest20181225\","
-//							+"\"queryorg_code\":\"S10152050H0001\","
-//							+"\"user_code\":\"111\","
-//							+"\"pass_word\":\"d54ca11b21b9aedc05d94b234a3d2263e875e046ddc08631303a7f2a04d76ab1\","
-//							+"\"qry_type\":\"0\","
-//							+"\"query_format\":\"30\","
-//							+"\"qtime_limit\":\"2019-12-25\","
-//							+"\"originate_orgcode\":\"S10152050H0001\","
-//							+"\"originate_usercode\":\"admin\","
-//							+"\"id_type\":\"10\","
-//							+"\"id_num\":\"123456789789456001\","
-//							+"\"na_me\":\"小明\","
-//							+"\"query_reason\":\"01\","
-//							+"\"service_code\":\"1233333\"}";
+    public static String test() throws Exception {
+		String queryUrl = "http://192.168.2.52:8080/cpp/icqQueryApply/openQuery.do";
+        String loginUrl = "http://192.168.2.52:8080/cpp/login/interfaceLogin.html";
+//        String queryUrl = "http://192.168.2.52:8080/cpp/ecqQueryApply/openQuery.do";
+        String loginoutUrl = "http://192.168.2.52:8080/cpp/login/interfaceLoginout.html";
         String paramJson = "{\"app_des\":\"interfaceTest20181225\","
-                +"\"queryorg_code\":\"S10152050H0001\","
-                +"\"user_code\":\"111\","
-                +"\"pass_word\":\"d54ca11b21b9aedc05d94b234a3d2263e875e046ddc08631303a7f2a04d76ab1\","
-                +"\"qry_type\":\"0\","
-                +"\"query_format\":\"30\","
-                +"\"qtime_limit\":\"2019-12-25\","
-                +"\"originate_orgcode\":\"S10152050H0001\","
-                +"\"originate_usercode\":\"admin\","
-                +"\"id_type\":\"02\","
-                +"\"id_num\":\"123456789789456122\","
-                +"\"na_me\":\"企业征信查询监管授权申请\","
-                +"\"query_reason\":\"10\","
-                +"\"service_code\":\"1233333\"}";
+                + "\"queryorg_code\":\"S10152050H0001\","
+                + "\"qry_type\":\"0\","
+                + "\"query_format\":\"30\","
+                + "\"qtime_limit\":\"2019-12-25\","
+                + "\"originate_orgcode\":\"S10152050H0001\","
+                + "\"originate_usercode\":\"admin\","
+                + "\"id_type\":\"10\","
+                + "\"id_num\":\"123456789789456001\","
+                + "\"client_ip\":\"9.1.60.84\","
+                + "\"client_mac\":\"68-F7-28-56-F6-AA\","
+                + "\"na_me\":\"小明\","
+                + "\"query_reason\":\"01\","
+                + "\"create_name\":\"01\","
+                + "\"create_tor\":\"01\","
+                + "\"query_reason\":\"01\","
+                + "\"rek_user_name \":\"01\","
+                + "\"query_reason\":\"01\","
+                + "\"query_reason\":\"01\","
+                + "\"query_reason\":\"01\","
+                + "\"query_reason\":\"01\","
+                + "\"service_code\":\"1233333\"}";
 
-        String username = "admin";
-        String password = "123abc";
 
+        String username = "test001";
+        String password = "test001test001";
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
         int connectTimeout = 50000;
@@ -73,7 +80,7 @@ public class HttpclientUtil {
         list.add(new BasicNameValuePair("username", username));
         list.add(new BasicNameValuePair("password", password));
 
-        UrlEncodedFormEntity entity1 = new UrlEncodedFormEntity(list,CHARSET_NAME);
+        UrlEncodedFormEntity entity1 = new UrlEncodedFormEntity(list, CHARSET_NAME);
         httpPost.setEntity(entity1);
 
         CloseableHttpResponse response = httpClient.execute(httpPost);//传参
@@ -88,7 +95,7 @@ public class HttpclientUtil {
 
         queryParamList.add(new BasicNameValuePair("paramJson", paramJson));
 
-        UrlEncodedFormEntity entity2 = new UrlEncodedFormEntity(queryParamList,CHARSET_NAME);
+        UrlEncodedFormEntity entity2 = new UrlEncodedFormEntity(queryParamList, CHARSET_NAME);
         httpPost.setEntity(entity2);
 
         response = httpClient.execute(httpPost);//传参
@@ -99,11 +106,11 @@ public class HttpclientUtil {
         BufferedReader br = null;
         try {
             in = response.getEntity().getContent();
-            bf = new InputStreamReader(in,CHARSET_NAME);
+            bf = new InputStreamReader(in, CHARSET_NAME);
             br = new BufferedReader(bf);
             String str;
-            while((str=br.readLine())!=null){
-                resultString+=str;
+            while ((str = br.readLine()) != null) {
+                resultString += str;
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -128,33 +135,33 @@ public class HttpclientUtil {
         httpPost.setConfig(requestConfig);
         response = httpClient.execute(httpPost);//传参
 
-//        String resultString = "";
-//        InputStream in = null;
-//        InputStreamReader bf = null;
-//        BufferedReader br = null;
-//        try {
-//        	in = response.getEntity().getContent();
-//        	bf = new InputStreamReader(in,CHARSET_NAME);
-//        	br = new BufferedReader(bf);
-//        	String str;
-//        	while((str=br.readLine())!=null){
-//        		resultString+=str;
-//        	}
-//        } catch (Exception e) {
-//        	e.printStackTrace();
-//        } finally {
-//        	if (null != br) {
-//        		br.close();
-//        		if (null != bf) {
-//        			bf.close();
-//        			if (null != in) {
-//        				in.close();
-//        			}
-//        		}
-//        	}
-//        }
-//
-//        System.out.println(resultString);
-//		return resultString;
+        return resultString;
+    }
+
+//    public String test2() {
+//        String loginUrl = "http://192.168.2.52:8080/cpp/login/interfaceLogin.html";
+//        String queryUrl = "http://192.168.2.52:8080/cpp/ecqQueryApply/openQuery.do";
+//        String loginoutUrl = "http://192.168.2.52:8080/cpp/login/interfaceLoginout.html";
+//        restTemplate.
+//    }
+
+    /**
+     * 登录征信报告
+     *
+     * @return
+     * @throws Exception
+     */
+    public ResponseEntity<String> login() throws Exception {
+        String finalLoginUrl = baseUrl + loginUrl + "?username={username}&password={password}";
+        log.info("登录路径{}", finalLoginUrl);
+        Map<String, String> v = new HashMap<>();
+//        v.put(OPUSERNAME, username);
+//        v.put(PASSWORD, password);
+        log.info("登录参数{}", v);
+        return restTemplate.getForEntity(finalLoginUrl, String.class, v);
+    }
+
+    public static void main(String[] args) {
+
     }
 }

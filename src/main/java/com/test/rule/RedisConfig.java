@@ -1,30 +1,33 @@
 package com.test.rule;
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.PropertyAccessor;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.DefaultUriBuilderFactory;
+
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 @Configuration
 public class RedisConfig {
 
     @Bean
-    public RedisTemplate<String,String> redisTemplate(RedisConnectionFactory factory) {
-        StringRedisTemplate template = new StringRedisTemplate(factory);
-        Jackson2JsonRedisSerializer<Object> jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer<>(
-                Object.class);
-        ObjectMapper om = new ObjectMapper();
-        om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
-        om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
-        jackson2JsonRedisSerializer.setObjectMapper(om);
-        //序列化 值时使用此序列化方法
-        template.setValueSerializer(jackson2JsonRedisSerializer);
-        template.afterPropertiesSet();
-        return template;
+    public RestTemplate restTemplate(RestTemplateBuilder builder) {
+        RestTemplate restTemplate = builder.build();
+        DefaultUriBuilderFactory uriFactory = new DefaultUriBuilderFactory();
+        uriFactory.setEncodingMode(DefaultUriBuilderFactory.EncodingMode.NONE);
+        restTemplate.setUriTemplateHandler(uriFactory);
+        List<HttpMessageConverter<?>> messageConverters = restTemplate.getMessageConverters();
+        for (int i = 0; i < messageConverters.size(); i++) {
+            HttpMessageConverter<?> httpMessageConverter = messageConverters.get(i);
+            if (httpMessageConverter.getClass().equals(StringHttpMessageConverter.class)) {
+                messageConverters.set(i, new StringHttpMessageConverter(StandardCharsets.UTF_8));
+            }
+        }
+        return restTemplate;
     }
 }
